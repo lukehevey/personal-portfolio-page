@@ -1,6 +1,4 @@
-*,
-*:before,
-*:after {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,7 +14,7 @@ body {
   font-family: sans-serif;
 }
 
-​h1,
+h1,
 h2,
 h3,
 h4,
@@ -25,7 +23,7 @@ h6 {
   font-size: 100%;
 }
 
-​input,
+input,
 select,
 option,
 optgroup,
@@ -37,8 +35,7 @@ code {
   font-family: inherit;
 }
 
-​ol,
+ol,
 ul {
   list-style: none;
 }
-
