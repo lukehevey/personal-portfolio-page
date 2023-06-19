@@ -1,1 +1,42 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
+body {
+    background-color:#fbddc4;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+
+header {
+    padding: 15px;
+    background-color:#e04548;  
+}
+
+header h1 {
+    font-size: 50px;  
+    background-color:#e04548;
+    color:white;
+}
+
+header nav {
+    text-align: right;
+    font-size: 20px;
+
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    border: 5px solid #ea9a77;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 16px;
+}
