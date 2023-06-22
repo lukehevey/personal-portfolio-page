@@ -5,59 +5,76 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Development Portfolio</title>
-    <link rel="stylesheet" href="./Assets/css/reset.css"/>
-    <link rel="stylesheet" href="./Assets/css/style.css"/>
+    <link rel="stylesheet" href="./Assets/css/reset.css" />
+    <link rel="stylesheet" href="./Assets/css/style.css" />
 </head>
 
 <body>
-  <header>
-    <h1>Luke Hevey</h1>
-    <nav>
-        <ul>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">My Work</a></li>
-            <li><a href="#">Contact Me</a></li>
-        </ul>
-    </nav>
-  </header>
+    <header>
+        <h1>Luke Hevey</h1>
+        <nav>
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
 
 
-  <main>
-    <h2>Portfolio</h2>
-    <section class="content">
-        <div class="about">
-            <h3>About Me</h3>
-            <p>
-                I am a college-aged person learning the very valauble skill of coding
-            </p>
-            <p>
-                I have dedicated a great amount of my time to create this portfolio and the projects showcased
-            </p>
-        </div>
-        <div class="work">
-            <h3>My Work</h3>
-            <p>
-                Project A
-            </p>
-            <img src="./assets/css/images/image-1.png">
-            <p>
-                Project B
-            </p>
-            <img src="./assets/css/images/image-1.png">
-            <p>
-                Project C
-            </p>
-            <img src="./assets/css/images/image-1.png">
-            <p>
-                Project D
-            </p>
-            <img src="./assets/css/images/image-1.png"><p>
-                Project E
-            </p>
-            <img src="./assets/css/images/image-1.png">
-        </div>
-        <div class="contact">
-            <h3>Contact Me</h3>
+    <main>
+        <section class="about container">
+            <h2>About Me</h2>
+            <div id="about-me" class="about-text">
+                <p>
+                    I have learned how to code.
+                </p>
+                <p>
+                    I have dedicated a great amount of my time to create this portfolio and the projects showcased.
+                </p>
+            </div>
+        </section>
+        <section class="work container">
+            <h2>Work</h2>
+            <div id="work" class="work-content">
+                <div class="featured">
+                    <article>
+                        <a href="#"><img src="./assets/css/images/image-1.png" alt=""></a>
+                        <article class="text-block">
+                            <h3>Project</h3>
+                            <p>Languages</p>
+                        </article>
+                </div>
+                <div class="not-featured">
+                    <div class="text-blocks">
+                        <h3>Project</h3>
+                        <p>Languages</p>
+                    </div>
+                    <article>
+                        <a href="#"><img src="./assets/css/images/image-1.png" alt=""></a>
+                        
+                    </article>
+
+                    <article>
+                        <a href="#"><img src="./assets/css/images/image-1.png" alt=""></a>
+
+                    </article>
+
+                    <article>
+                        <a href="#"><img src="./assets/css/images/image-1.png" alt=""></a>
+                        
+                    </article>
+
+                    <article>
+                        <a href="#"><img src="./assets/css/images/image-1.png" alt=""></a>
+
+                    </article>
+                </div>
+
+            </div>
+        </section>
+        <section id="contact-me" class="contact container">
+            <h2>Contact Me</h2>
             <nav>
                 <ul>
                     <li><a href="#">763-464-1057</a></li>
@@ -65,11 +82,9 @@
                     <li><a href="#">Github</a></li>
                 </ul>
             </nav>
-        </div>
+        </section>
 
-    </section>
-  </main>
-
+    </main>
 </body>
 
 </html>

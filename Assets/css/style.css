@@ -5,38 +5,170 @@
 }
 
 body {
-    background-color:#fbddc4;
-    font-family:Georgia, 'Times New Roman', Times, serif
+    background-color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 
 header {
-    padding: 15px;
-    background-color:#e04548;  
+    padding: 20px;
+    background-color:steelblue;  
 }
 
 header h1 {
-    font-size: 50px;  
-    background-color:#e04548;
+    display: inline-block;
+    font-size: 60px;  
     color:white;
+    font-weight: 400;
+}
+
+
+header li {
+    float: right;
+}
+
+
+header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+    margin-top: -25px;
+    font-style: oblique;
 }
 
 header nav {
     text-align: right;
-    font-size: 20px;
-
-}
-
-h2 {
-    font-size: 30px;
-    text-align: center;
-    border: 5px solid #ea9a77;
-}
-
-h3 {
     font-size: 25px;
 }
 
-p {
+h2 {
+    margin-top: 40px;
+    font-size: 50px;
+    padding: 20px;
+    border-right: 4px solid darkgray;
+    margin-right: 30px;
+}
+
+ h3 { 
+    margin-top: 10px;
+    font-size: 25px;
+    text-align: left;
+} 
+
+.about-text {
+    display: flex;
+    flex: 4;
+}
+
+.about-text p {
+    margin-top: 10px;
+    text-indent: 10px;
     font-size: 16px;
 }
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.container h2 {
+    flex: 1;
+}
+
+.work-content {
+    display: flex;
+    flex: 4;
+    flex-direction: column;
+}
+
+.work-content p {
+    margin: 15px 10px 10px 0;
+    font-size: 14px;
+}
+
+.not-featured {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.featured {
+    width: 100%;
+    margin-top: 50px;
+    position: relative;
+}
+
+.text-block {
+    position: absolute;
+    bottom: 40px;
+    left: 15px;
+    background-color: steelblue;
+    width: 115px;
+    height: 70px;
+    color: black;
+    padding-left: 10px;
+    padding-right: 20px
+
+}
+
+
+.featured img {
+    border: 5px solid steelblue;
+    margin: 10px;
+}
+
+.work-content img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.not-featured {
+    position: relative;
+}
+
+.text-blocks {
+    position: absolute;
+    bottom: 40px;
+    left: 15px;
+    background-color: steelblue;
+    width: 115px;
+    height: 70px;
+    color: black;
+    padding-left: 10px;
+    padding-right: 20px
+}
+
+.not-featured img {
+    border: 5px solid steelblue;
+    margin: 10px;
+}
+
+.not-featured article {
+    width: 49%
+}
+
+.contact nav {
+    display: flex;
+    flex: 4;
+    margin-top: 30px;
+    margin-left: 45px;
+    margin-right: -45px;
+}
+
+.contact li {
+    float: right;
+    margin: 70px 70px;
+    font-size: 20px;
+}
+
+.contact li a {
+    color: steelblue;
+}
+
+
+
+
