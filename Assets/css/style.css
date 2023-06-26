@@ -4,7 +4,7 @@
     margin: 0;
 }
 
-
+/* Sets background color and font style of whole page */
 body {
     background-color: lightcyan;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
@@ -68,6 +68,8 @@ h3 {
     text-align: left;
 }
 
+
+/* Profile avatar size adjusted for webpage */
 .avatar {
     width: 300px;
     min-width: 20%;
@@ -132,7 +134,7 @@ h3 {
     position: relative;
 }
 
-
+/* Box around featured project image text */
 .text-block {
    margin-top: -15px;
     margin-left: 10px;
@@ -141,7 +143,7 @@ h3 {
     width: 100%;
 } 
 
-
+/* Sets border and margins around large project image */
 .featured img {
     border: 5px solid steelblue;
     margin: 10px;
@@ -160,6 +162,7 @@ h3 {
     position: relative;
 }
 
+/* Box around text blocks for smaller images */
 .text-blocks {
     margin-top: -15px;
     margin-left: 10px;
@@ -169,17 +172,19 @@ h3 {
 }
 
 
+/* Sets margins and border around smaller project images */
 .not-featured img {
     border: 5px solid steelblue;
     margin: 10px;
 }
 
-/* Small project iamges fit to width od large image. */
+/* Small project images fit to width of large image. */
 .not-featured article {
     width: 49%
 }
 
 
+/* Opacity becomes clear and box shadow appears when hovering over image */
 .work-content img:hover {
    opacity: 1.0;
     box-shadow: 0 0 15px blue;
