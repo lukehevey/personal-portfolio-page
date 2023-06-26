@@ -6,18 +6,20 @@
 
 
 body {
-    background-color: white;
+    background-color: lightcyan;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 
 header {
+    display: flex;
     padding: 20px;
     background-color: steelblue;
 }
 
 
 header h1 {
+    flex: 1;
     display: inline-block;
     font-size: 60px;
     color: steelblue;
@@ -36,15 +38,15 @@ header li {
 
 header li a {
     display: block;
-    color: lightblue;
+    color: white;
     text-align: center;
     padding: 5px 10px;
-    margin-top: -30px;
     font-style: oblique;
 }
 
 
 header nav {
+    flex: 4;
     text-align: right;
     font-size: 25px;
 }
@@ -64,6 +66,16 @@ h3 {
     margin-top: 10px;
     font-size: 25px;
     text-align: left;
+}
+
+.avatar {
+    width: 300px;
+    min-width: 20%;
+    min-height: 281px;
+    margin: 35px 10px;
+    border: 5px solid steelblue;
+    border-radius: 10px;
+    float: left;
 }
 
 
@@ -122,16 +134,12 @@ h3 {
 
 
 .text-block {
-    position: absolute;
-    bottom: 40px;
-    left: 15px;
+   margin-top: -15px;
+    margin-left: 10px;
+    border: 5px solid steelblue;
     background-color: steelblue;
-    width: 115px;
-    height: 70px;
-    color: black;
-    padding-left: 10px;
-    padding-right: 20px
-}
+    width: 100%;
+} 
 
 
 .featured img {
@@ -141,6 +149,7 @@ h3 {
 
 
 .work-content img {
+   opacity: 0.85;
     width: 100%;
     height: 300px;
     object-fit: cover;
@@ -151,56 +160,12 @@ h3 {
     position: relative;
 }
 
-
-#text-blocks {
-    position: absolute;
-    bottom: 40px;
-    left: 15px;
+.text-blocks {
+    margin-top: -15px;
+    margin-left: 10px;
+    border: 5px solid steelblue;
     background-color: steelblue;
-    width: 115px;
-    height: 70px;
-    color: black;
-    padding-left: 10px;
-    padding-right: 20px
-}
-
-
-#text-blocks-two {
-    position: absolute;
-    bottom: 40px;
-    right: 440px;
-    background-color: steelblue;
-    width: 115px;
-    height: 70px;
-    color: black;
-    padding-left: 10px;
-    padding-right: 20px
-}
-
-
-#text-blocks-three {
-    position: absolute;
-    bottom: 363px;
-    left: 15px;
-    background-color: steelblue;
-    width: 115px;
-    height: 70px;
-    color: black;
-    padding-left: 10px;
-    padding-right: 20px
-}
-
-
-#text-blocks-four {
-    position: absolute;
-    bottom: 363px;
-    right: 440px;
-    background-color: steelblue;
-    width: 115px;
-    height: 70px;
-    color: black;
-    padding-left: 10px;
-    padding-right: 20px
+    width: 100%;
 }
 
 
@@ -209,18 +174,19 @@ h3 {
     margin: 10px;
 }
 
-
+/* Small project iamges fit to width od large image. */
 .not-featured article {
     width: 49%
 }
 
 
-img:hover {
-   box-shadow: 0 0 15px blue;
+.work-content img:hover {
+   opacity: 1.0;
+    box-shadow: 0 0 15px blue;
 }
 
 
-img:focus {
+.work-content img:focus {
     border-right-width: 5px;
 }
 
@@ -228,19 +194,33 @@ img:focus {
 .contact nav {
     display: flex;
     flex: 4;
-    margin-top: 30px;
-    margin-left: 45px;
-    margin-right: -45px;
+    flex-wrap: wrap;
 }
 
 
 .contact li {
     float: right;
-    margin: 70px 70px;
+    margin: 50px;
     font-size: 20px;
+    flex-direction: column;
+    align-items: center;
 }
 
 
 .contact li a {
     color: steelblue;
+}
+
+
+@media screen and (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    header li {
+        flex-direction: column;
+    }
 }
